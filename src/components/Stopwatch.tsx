@@ -25,10 +25,10 @@ const Stopwatch: React.FC<StopwatchProps> = ({ className }) => {
   // Update document title with current timer
   useEffect(() => {
     const formattedTime = formatTime(elapsedTime);
-    document.title = `${formattedTime.minutes}:${formattedTime.seconds}.${formattedTime.milliseconds} - Elegant Stopwatch`;
-    
+    document.title = `${formattedTime.minutes}:${formattedTime.seconds}.${formattedTime.milliseconds} - dEagle Stopwatch`;
+
     return () => {
-      document.title = 'Elegant Stopwatch';
+      document.title = 'dEagle Stopwatch';
     };
   }, [elapsedTime]);
 
@@ -70,17 +70,17 @@ const Stopwatch: React.FC<StopwatchProps> = ({ className }) => {
 
   return (
     <div className={cn("flex flex-col items-center", className)}>
-      <TimeDisplay 
-        time={formattedTime} 
-        isRunning={isRunning} 
-        className="mb-10 animate-enter" 
+      <TimeDisplay
+        time={formattedTime}
+        isRunning={isRunning}
+        className="mb-10 animate-enter"
       />
-      <ControlButtons 
+      <ControlButtons
         isRunning={isRunning}
         onStart={startTimer}
         onStop={stopTimer}
         onReset={resetTimer}
-        className="animate-enter" 
+        className="animate-enter"
       />
     </div>
   );

@@ -8,17 +8,17 @@ const Index = () => {
       <div className="w-full max-w-4xl">
         <header className="mb-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-nude-800 tracking-tight mb-2 animate-fade-in">
-            Elegant Stopwatch
+            dEagle Stopwatch
           </h1>
           <p className="text-nude-600 text-lg animate-fade-in opacity-80">
             Beautifully designed for precision timing
           </p>
         </header>
-        
+
         <main className="w-full py-6">
           <Stopwatch />
         </main>
-        
+
         <footer className="mt-16 text-center text-nude-500 text-sm animate-fade-in">
           <p>
             Designed with elegance and precision in mind
