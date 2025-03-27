@@ -22,6 +22,16 @@ const Stopwatch: React.FC<StopwatchProps> = ({ className }) => {
     };
   }, []);
 
+  // Update document title with current timer
+  useEffect(() => {
+    const formattedTime = formatTime(elapsedTime);
+    document.title = `${formattedTime.minutes}:${formattedTime.seconds}.${formattedTime.milliseconds} - Elegant Stopwatch`;
+    
+    return () => {
+      document.title = 'Elegant Stopwatch';
+    };
+  }, [elapsedTime]);
+
   const startTimer = () => {
     setIsRunning(true);
     startTimeRef.current = Date.now() - elapsedTime;
