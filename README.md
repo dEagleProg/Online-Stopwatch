@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://lovable.dev/projects/7cc8e97f-68a1-4b4d-9f01-643eeab80a89](https://deaglestopwatch.vercel.app/)
+**URL**: https://deaglestopwatch.vercel.app
 
 ## How can I edit this code?
 
